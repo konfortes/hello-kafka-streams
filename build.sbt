@@ -22,11 +22,11 @@ version := "1.0"
 
 // Want to use a published library in your project?
 // You can define other libraries as dependencies in your build like this:
-
 libraryDependencies ++= Seq(
   "org.apache.kafka" % "kafka-streams" % "2.7.0",
-  "org.apache.kafka" %% "kafka-streams-scala" % "2.7.0"
-  // "org.apache.kafka" % "kafka-streams-test-utils" % "2.7.0" % Test
+  "org.apache.kafka" %% "kafka-streams-scala" % "2.7.0",
+  "org.apache.kafka" % "kafka-streams-test-utils" % "2.7.0" % Test,
+  "org.log4s" %% "log4s" % "1.9.0"
 )
 
 // Here, `libraryDependencies` is a set of dependencies, and by using `+=`,

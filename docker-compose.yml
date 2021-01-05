@@ -25,6 +25,7 @@ services:
       KAFKA_BROKER_ID: 1
       KAFKA_DELETE_TOPIC_ENABLE: 'true'
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'true'
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
   # kafka2:
   #   image: 'confluentinc/cp-kafka:latest'
   #   depends_on:
