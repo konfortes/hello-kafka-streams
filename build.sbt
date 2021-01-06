@@ -26,7 +26,8 @@ libraryDependencies ++= Seq(
   "org.apache.kafka" % "kafka-streams" % "2.7.0",
   "org.apache.kafka" %% "kafka-streams-scala" % "2.7.0",
   "org.apache.kafka" % "kafka-streams-test-utils" % "2.7.0" % Test,
-  "org.log4s" %% "log4s" % "1.9.0"
+  "org.slf4j" % "slf4j-api" % "1.7.30",
+  "org.slf4j" % "slf4j-log4j12" % "1.7.30"
 )
 
 // Here, `libraryDependencies` is a set of dependencies, and by using `+=`,

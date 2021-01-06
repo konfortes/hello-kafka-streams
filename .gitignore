@@ -2,3 +2,6 @@
 .metals/
 metals.sbt
 target/
+
+.idea/
+.bsp/

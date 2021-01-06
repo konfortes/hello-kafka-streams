@@ -1,3 +1,5 @@
+package wordcounter
+
 import java.util.Properties
 import java.util.concurrent.TimeUnit
 
@@ -12,8 +14,11 @@ object WordCountApplication extends App {
 
   val props: Properties = {
     val p = new Properties()
-    p.put(StreamsConfig.APPLICATION_ID_CONFIG, "hello-kafka-streams")
+    p.put(StreamsConfig.APPLICATION_ID_CONFIG, "hello-kafka-streams-colors")
     p.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
+    // disable caching in order to view each step instantly
+    p.put(StreamsConfig.CACHE_MAX_BYTES_BUFFERING_CONFIG, "0")
+
     p
   }
 
